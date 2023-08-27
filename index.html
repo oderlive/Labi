@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Labi</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="71" height="37" viewBox="0 0 71 37" fill="none">
+                        <g clip-path="url(#clip0_2764_120526)">
+                            <path
+                                d="M36.1338 37H31.0928L30.2102 30.2906H24.0912L23.2263 37H18.6356L23.7298 0H31.0455L36.1338 37ZM24.725 25.2661H29.5468L27.1359 6.57194L24.725 25.2661Z"
+                                fill="#8A0F0C" />
+                            <path
+                                d="M57.9563 8.50767V9.83401C57.9563 13.6398 56.9552 16.0714 54.728 17.2842C57.4113 18.4791 58.4539 21.305 58.4539 25.2123V28.1996C58.4539 33.9052 55.8653 36.9701 50.8658 36.9701H42.9993V0H50.5459C55.729 0 57.9563 2.80203 57.9563 8.50767ZM47.981 5.28742V15.0677H49.9358C51.8017 15.0677 52.939 14.1117 52.939 11.1544V9.09317C52.939 6.44647 52.163 5.28742 50.3919 5.28742H47.981ZM47.981 20.3491V31.7006H50.848C52.5303 31.7006 53.4366 30.7985 53.4366 28.0502V24.824C53.4366 21.3887 52.4829 20.3312 50.2083 20.3312L47.981 20.3491Z"
+                                fill="#0F265C" />
+                            <path
+                                d="M68.5002 5.98047L66.0005 8.48378V11.0468L68.5002 8.5256L71 11.0468V8.48378L68.5002 5.98047Z"
+                                fill="#0F265C" />
+                            <path
+                                d="M71 17.0033V14.4581L68.5002 11.9548L66.0005 14.4581V17.0033L68.5002 14.482L71 17.0033Z"
+                                fill="#0F265C" />
+                            <path d="M68.5002 17.9116L66.0005 20.4149V37.0001H71V20.4149L68.5002 17.9116Z"
+                                fill="#0F265C" />
+                            <path d="M68.5002 2.55708L71 5.07234V0H66.0005V5.07234L68.5002 2.55708Z" fill="#0F265C" />
+                            <path
+                                d="M4.9995 16.9973V14.4462L2.5116 11.9548L0 14.4701V17.0152L2.5116 14.482L4.9995 16.9973Z"
+                                fill="#8A0F0C" />
+                            <path d="M4.9995 5.06636V0H0V5.08429L2.5116 2.55708L4.9995 5.06636Z" fill="#8A0F0C" />
+                            <path d="M4.9995 31.7187V20.403L2.5116 17.9116L0 20.4269V37.0001H13.2273V31.7187H4.9995Z"
+                                fill="#8A0F0C" />
+                            <path
+                                d="M2.5116 8.5256L4.9995 11.0409V8.4778L2.5116 5.98047L0 8.49573V11.0588L2.5116 8.5256Z"
+                                fill="#8A0F0C" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2764_120526">
+                                <rect width="71" height="37" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span>agency</span>
+                </div>
+                <div class="header__contacts">
+                    <div class="header__email">
+                        <a href="mailto:welcome@labi.agency">welcome@labi.agency</a>
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+79213660432">+7 921 366 04 32</a>
+                    </div>
+                    <a href="tel:+79213660432">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2764_120544)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.415 14.382C17.117 14.233 15.656 13.515 15.384 13.415C15.112 13.316 14.914 13.267 14.715 13.565C14.517 13.861 13.948 14.531 13.775 14.729C13.601 14.928 13.428 14.952 13.131 14.804C12.834 14.654 11.876 14.341 10.741 13.329C9.858 12.541 9.261 11.568 9.088 11.27C8.915 10.973 9.069 10.812 9.218 10.664C9.352 10.531 9.515 10.317 9.664 10.144C9.813 9.97004 9.862 9.84604 9.961 9.64704C10.061 9.44904 10.011 9.27604 9.936 9.12704C9.862 8.97804 9.268 7.51504 9.02 6.92004C8.779 6.34104 8.534 6.42004 8.352 6.41004C8.178 6.40204 7.98 6.40004 7.782 6.40004C7.584 6.40004 7.262 6.47404 6.99 6.77204C6.717 7.06904 5.95 7.78804 5.95 9.25104C5.95 10.713 7.014 12.126 7.163 12.325C7.312 12.523 9.258 15.525 12.239 16.812C12.949 17.118 13.502 17.301 13.933 17.437C14.645 17.664 15.293 17.632 15.805 17.555C16.375 17.47 17.563 16.836 17.811 16.142C18.058 15.448 18.058 14.853 17.984 14.729C17.91 14.605 17.712 14.531 17.414 14.382H17.415ZM11.993 21.785H11.989C10.2184 21.7854 8.48037 21.3094 6.957 20.407L6.597 20.193L2.855 21.175L3.854 17.527L3.619 17.153C2.62914 15.5774 2.10529 13.7538 2.108 11.893C2.11 6.44304 6.544 2.00904 11.997 2.00904C14.637 2.00904 17.119 3.03904 18.985 4.90704C19.9054 5.82362 20.6349 6.91361 21.1313 8.11394C21.6277 9.31427 21.8811 10.6011 21.877 11.9C21.875 17.35 17.441 21.785 11.993 21.785ZM20.405 3.48804C19.3032 2.37896 17.9922 1.49958 16.5481 0.900841C15.1039 0.302105 13.5553 -0.00407625 11.992 4.09775e-05C5.438 4.09775e-05 0.102 5.33504 0.1 11.892C0.096963 13.9788 0.644374 16.0294 1.687 17.837L0 24L6.304 22.346C8.04787 23.2962 10.0021 23.794 11.988 23.794H11.993C18.547 23.794 23.883 18.459 23.885 11.901C23.8898 10.3383 23.5848 8.79014 22.9874 7.34607C22.3901 5.90201 21.5124 4.59071 20.405 3.48804Z"
+                                    fill="#363636" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2764_120544">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__order">
+                    <div class="header__btn">
+                        <a href="#">Заказать звонок</a>
+                    </div>
+                    <div class="header__menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <path d="M9.16675 12.8333H34.8334" stroke="#232323" stroke-linecap="round" />
+                            <path d="M9.16675 22H34.8334" stroke="#232323" stroke-linecap="round" />
+                            <path d="M9.16675 31.1667H34.8334" stroke="#232323" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="start">
+            <div class="header__container">
+                <div class="start__text">
+                    <h3 class="start__title">
+                        Мы дополняем Вашу задачу нашим дизайном
+                    </h3>
+                    <span class="start__sub">
+                        Рекламно-производственная компания и комплексное рекламное агентство
+                    </span>
+                </div>
+                <div class="start__btns">
+                    <div class="startbtn__one">
+                        <a href="#">Оставить заявку</a>
+                    </div>
+                    <div class="startbtn__two">
+                        <a href="#">Рассчитать стоимость</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale">
+            <div class="header__container">
+                <div class="sale__title">
+                    <h3 class="sale__text">
+                        Акции и спецпредложения
+                    </h3>
+                    <a class="sale__texts" href="#">Показать ещё</a>
+                </div>
+                <div class="sale__names">
+                    <a href="#" class="sale__name">
+                        Сезон календарей
+                    </a>
+                    <a href="#" class="sale__name">
+                        Табличка в подарок
+                    </a>
+                    <a href="#" class="sale__name">
+                        Продукция для печати и рекламы
+                    </a>
+                    <a href="#" class="sale__name">
+                        Визуализация выставочного стенда
+                    </a>
+                </div>
+                <div class="sale__head">
+                    <div class="sale__head-item"><a class="sale__head-link" href="#">Типография</a></div>
+                    <div class="sale__head-item"><a class="sale__head-link" href="#">Выставки</a></div>
+                    <div class="sale__head-item"><a class="sale__head-link" href="#">Дизайн</a></div>
+                    <div class="sale__head-item"><a class="sale__head-link" href="#">Производство</a></div>
+                </div>
+            </div>
+            <div class="sale__photos">
+                <div class="sale__photos-one">
+                    <div class="sale__photos-item"><img src="./img/sale1.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale2.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale3.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale4.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale5.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale6.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale7.jpg" alt=""></div>
+                </div>
+                <div class="sale__photos-two">
+                    <div class="sale__photos-item"><img src="./img/sale11.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale22.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale33.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale44.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale55.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale66.jpg" alt=""></div>
+                    <div class="sale__photos-item"><img src="./img/sale77.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="labi__info">
+                    <div class="labi__text">
+                        <div class="labi__text-title"><span class="labi__text-title-one">LA</span><span
+                                class="labi__text-title-two">BI</span> — значит «хорошо»</div>
+                        <div class="labi__text-subtitle">Именно так мы делаем нашу работу. Качественно и ответственно
+                        </div>
+                        <div class="labi__text-subtext">
+                            <span>
+                                А ещё это искусный и умелый. В LABI мы считаем, что это достаточно важные качества для
+                                рекламно-производственной компании
+                            </span>
+                            <br />
+                            <span>
+                                И ещё это можно перевести, как удачный. Именно такой выбор
+                                вы сделаете, начав сотрудничество с LABI agency
+                            </span>
+                        </div>
+                    </div>
+                    <div class="labi__history">
+                        <div class="labi__history-items">
+                            <div class="labi__history-item">
+                                <div class="labi__history-item-title">
+                                    <span>Опыт</span>
+                                </div>
+                                <div class="labi__history-item-text">15+</div>
+                                <div class="labi__history-item-subtext">Более 15 лет опыта</div>
+                            </div>
+                            <div class="labi__history-item">
+                                <div class="labi__history-item-title">Клиенты</div>
+                                <div class="labi__history-item-text">680</div>
+                                <div class="labi__history-item-subtext">Сотни довольных клиентов</div>
+                            </div>
+                            <div class="labi__history-item">
+                                <div class="labi__history-item-title">Проекты</div>
+                                <div class="labi__history-item-text">3127</div>
+                                <div class="labi__history-item-subtext">Тысячи реализованных проектов</div>
+                            </div>
+                            <div class="labi__history-item">
+                                <div class="labi__history-item-title">Пункты выдачи</div>
+                                <div class="labi__history-item-text">2793</div>
+                                <div class="labi__history-item-subtext">Множество пунктов выдачи</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trust">
+            <div class="container">
+                <h3 class="trust__title">Нам доверяют</h3>
+                <div class="trust__subtitle">Мы помогли множеству клиентов воплотить их идеи в реальность</div>
+                <div class="trust__items">
+                    <div class="trust__items-one">
+                        <a href="#"><img src="./img/trust1.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust2.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust3.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust4.svg" alt="" class="trust__item"></a>
+                        <a href="#"> <img src="./img/trust16.svg" alt="" class="trust__item"></a>
+                    </div>
+                    <div class="trust__items-two">
+                        <a href="#"><img src="./img/trust5.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust6.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust7.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust8.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust8.svg" alt="" class="trust__item"></a>
+                    </div>
+                    <div class="trust__items-three">
+                        <a href="#"><img src="./img/trust10.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust11.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust12.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust12.svg" alt="" class="trust__item"></a>
+                        <a href="#"><img src="./img/trust14.svg" alt="" class="trust__item"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="form__img">
+                <img src="./img/form.jpg" alt="">
+            </div>
+            <div class="form__content">
+                <div class="form__idea">
+                    <div class="form__idea-title">
+                        Возникла идея? Свяжитесь с нами!
+                    </div>
+                    <div class="form__idea-phone">
+                       <span>+7 921 366 04 32</span> 
+                    </div>
+                    <div class="form__idea-email">
+                        <span>welcome@labi.agency</span>
+                    </div>
+                    <div class="form__idea-location">
+                        <span>г. Санкт-Петербург, Караваевская улица, 33к5</span>
+                    </div>
+                </div>
+                <div class="form__con">
+                    <span class="or">ИЛИ</span>
+                    <div class="form__con-title">
+                        Оставьте заявку
+                    </div>
+                    <div class="form__con-text">
+                        Наш менеджер свяжется с вами в течение 30 минут
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Ваше имя" />
+                        <input type="text" placeholder="Адрес почты" />
+                        <input type="text" class="number-phone" placeholder="Номер телефона" />
+                        <div class="form__btn-group">
+                            <button class="form__btn">Оставить заявку</button>
+                            <div class="form__agree">Оставляя заявку, вы принимаете условия пользовательского соглашения
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="how">
+            <div class="container">
+                <h3 class="how__title">
+                    Как мы работаем
+                </h3>
+                <div class="how__items">
+                    <div class="how__item">
+                        <img src="./img/how1.svg" alt="">
+                        <div class="how__text">Вы отправляете заявку или звоните нам в офис</div>
+                    </div>
+                    <div class="how__item">
+                        <img src="./img/how2.svg" alt="">
+                        <div class="how__text">Оцениваем стоимость и сроки заказа</div>
+                    </div>
+                    <div class="how__item">
+                        <img src="./img/how3.svg" alt="">
+                        <div class="how__text">Вы совершаете оплату, мы ее принимаем</div>
+                    </div>
+                    <div class="how__item">
+                        <img src="./img/how4.svg" alt="">
+                        <div class="how__text">Разрабатываем и правим макеты</div>
+                    </div>
+                    <div class="how__item">
+                        <img src="./img/how5.svg" alt="">
+                        <div class="how__text">Мы запускаем производство и создаем продукт</div>
+                    </div>
+                    <div class="how__item">
+                        <img src="./img/how6.svg" alt="">
+                        <div class="how__text">Вы получаете заказ удобным способом</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__one">
+                <div class="footer__item">
+                    <div class="footer-icon">
+                        <img src="./img/footerLogo.svg" alt="">
+                    </div>
+                    <ul class="footer__contacts">
+                        <li class="footer__contact-time">Пн-Пт с 11:00 до 19:00</li>
+                        <li class="footer__contact-tel"><a href="tel:79213660432">+7 921 366 04 32</a></li>
+                        <li class="footer__contact-mail"><a href="mailto:welcome@labi.agency">welcome@labi.agency</a>
+                        </li>
+                        <li class="footer__contact-town">г. Санкт-Петербург, Караваевская улица, 33к5</li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">
+                            Типография
+                        </div>
+                        <div class="footer__list-text-inner">
+                            <li class="footer__list-text"><a href="#">Наклейки</a></li>
+                            <li class="footer__list-text"><a href="#">Открытки и сертификаты</a></li>
+                            <li class="footer__list-text"><a href="#">Плакаты и афиши</a></li>
+                            <li class="footer__list-text"><a href="#">Дипломы и грамоты</a></li>
+                            <li class="footer__list-text"><a href="#">Календари</a></li>
+                            <li class="footer__list-text"><a href="#">Каталоги и буклеты</a></li>
+                            <li class="footer__list-text"><a href="#">Листовки</a></li>
+                            <li class="footer__list-text"><a href="#">Визитки</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">
+                            Выставки
+                        </div>
+                        <div class="footer__list-text-inner">
+                            <li class="footer__list-text"><a href="#">Указатели и буклетницы</a></li>
+                            <li class="footer__list-text"><a href="#">Промостойки и торговые островки</a></li>
+                            <li class="footer__list-text"><a href="#">Оформление мероприятий и выставок</a></li>
+                            <li class="footer__list-text"><a href="#">Выставочные стенды</a></li>
+                            <li class="footer__list-text"><a href="#">Аренда выставочного оборудования</a></li>
+                            <li class="footer__list-text"><a href="#">Стенды press wall, brand wall</a></li>
+                            <li class="footer__list-text"><a href="#">Мобильные стены (roll up и pop up)</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">
+                            Дизайн и Диджитал
+                        </div>
+                        <div class="footer__list-text-inner">
+                            <li class="footer__list-text"><a href="#">Администрирование и поддержка сайтов</a></li>
+                            <li class="footer__list-text"><a href="#">СЕО-оптимизация</a></li>
+                            <li class="footer__list-text"><a href="#">Доработка сайта</a></li>
+                            <li class="footer__list-text"><a href="#">Интернет-магазины</a></li>
+                            <li class="footer__list-text"><a href="#">Контекстная реклама</a></li>
+                            <li class="footer__list-text"><a href="#">Баннеры (вэб)</a></li>
+                            <li class="footer__list-text"><a href="#">Создание сайтов</a></li>
+                            <li class="footer__list-text"><a href="#">Дизайн полиграфии</a></li>
+                            <li class="footer__list-text"><a href="#">Разработка логотипа и фирменного стиля</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__two">
+                <div class="footer__item">
+                    <div class="footer__nav">
+                        <div class="footer__nav-item"><a href="#">Главная</a></div>
+                        <div class="footer__nav-item"><a href="#">Услуги</a></div>
+                        <div class="footer__nav-item"><a href="#">Тех. требования</a></div>
+                        <div class="footer__nav-item"><a href="#">О нас</a></div>
+                        <div class="footer__nav-item"><a href="#">Вакансии</a></div>
+                        <div class="footer__nav-item"><a href="#">Контакты</a></div>
+                    </div>
+                    <ul class="footer__polices">
+                        <li class="footer__police">Политика конфиденциальности</li>
+                        <li class="footer__police">© 2021 LABI.agency</li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">
+                            Производство рекламы
+                        </div>
+                        <div class="footer__list-text-inner">
+                            <li class="footer__list-text"><a href="#">Брендирование автотранспорта</a></li>
+                            <li class="footer__list-text"><a href="#">Оформление офисов и торговых точек</a></li>
+                            <li class="footer__list-text"><a href="#">Баннеры</a></li>
+                            <li class="footer__list-text"><a href="#">Брендирование контейнеров</a></li>
+                            <li class="footer__list-text"><a href="#">Информационные стенды</a></li>
+                            <li class="footer__list-text"><a href="#">Таблички</a></li>
+                            <li class="footer__list-text"><a href="#">Оформление витрин</a></li>
+                            <li class="footer__list-text"><a href="#">Объемные буквы и вывески</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">
+                            Сувенирная продукция
+                        </div>
+                        <div class="footer__list-text-inner">
+                            <li class="footer__list-text"><a href="#">Ланьярды и бирки</a></li>
+                            <li class="footer__list-text"><a href="#">Корпоративные подарки</a></li>
+                            <li class="footer__list-text"><a href="#">Награды</a></li>
+                            <li class="footer__list-text"><a href="#">Текстиль (футболки и кепки)</a></li>
+                            <li class="footer__list-text"><a href="#">Пакеты с логотипом</a></li>
+                            <li class="footer__list-text"><a href="#">Подарочные наборы</a></li>
+                            <li class="footer__list-text"><a href="#">Ежедневники и блокноты</a></li>
+                            <li class="footer__list-text"><a href="#">Кружки</a></li>
+                            <li class="footer__list-text"><a href="#">Ручки</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">
+                            BTL
+                        </div>
+                        <div class="footer__list-text-inner">
+                            <li class="footer__list-text"><a href="#">Дорхенгеры (дверные крючки)</a></li>
+                            <li class="footer__list-text"><a href="#">Корпоративные мероприятия</a></li>
+                            <li class="footer__list-text"><a href="#">Церемонии открытия магазинов и офисов</a></li>
+                            <li class="footer__list-text"><a href="#">Безадресная рассылка по почтовым ящикам</a></li>
+                            <li class="footer__list-text"><a href="#">Тайный покупатель</a></li>
+                            <li class="footer__list-text"><a href="#">Ростовые куклы</a></li>
+                            <li class="footer__list-text"><a href="#">Дегустации</a></li>
+                            <li class="footer__list-text"><a href="#">Промо-акции (СПБ, Москва + регионы)</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
